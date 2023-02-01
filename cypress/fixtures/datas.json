@@ -1,21 +1,27 @@
 [
 {
-    "Name": "Ant-Man And The Wasp"
+    "Name": "Ant-Man And The Wasp",
+    "Type": "movie"
 },
 {
-    "Name": "Captain Marvel"
+    "Name": "Captain Marvel",
+    "Type": "movie"
 },
 {
-    "Name": "Guardians Of The Galaxy Vol. 2"
+    "Name": "Guardians Of The Galaxy Vol. 2",
+    "Type": "movie"
 },
 {
-    "Name": "Endgame"
+    "Name": "Endgame",
+    "Type": "show"
 },
 {
-    "Name": "Spider-Man: Far From Home"
+    "Name": "Spider-Man: Far From Home",
+    "Type": "movie"
 },
 {
-    "Name": "Ant-Man"
+    "Name": "Ant-Man",
+    "Type": "movie"
 }
 
   
