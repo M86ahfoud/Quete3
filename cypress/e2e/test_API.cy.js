@@ -4,8 +4,8 @@ describe('template spec', () => {
   beforeEach(() => {
     
 
-      cy.fixture('datas.json').as('userdata')
-    // let users = requier('../fixtures/data.json')
+      cy.fixture('datas.json').as('userdata');
+   
    
   })
   it('Test_API', () => {
@@ -15,18 +15,16 @@ describe('template spec', () => {
         
         cy.request(
           `https://tastedive.com/api/similar?q=${user.Name}`
-        ).as('user.Name')
+        ).then(resp => {
+          expect(resp.status).to.equal(200);
+          expect(resp.body.Similar).to.have.property('Info');
+        })
 
         
       });
     })
 
-//     cy.get('https://tastedive.com/api/similar?q=','userdata')
-//         .then((response) => {
-//             // expect(response.body.Similar.Results).to.have.length(20)
-//             expect(response.body.Similar.Results[0]).have.property('Name')
-            
-//         })
+
 })
 
 
